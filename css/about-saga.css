@@ -1,0 +1,13 @@
+.right-half {
+    background-image: url(../images/exhibition-big.jpg);
+    background-size: cover;
+    display: flex;
+    flex-wrap: column;
+    justify-content: center;
+    gap: 1em;
+    align-items: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+}

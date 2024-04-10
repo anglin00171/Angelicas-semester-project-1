@@ -1,0 +1,38 @@
+
+footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    margin: 0;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    align-items: center;
+    background-color: #a8fff5;
+    color: #141414;
+    font-family: var(--font-family-main);
+}
+
+footer .footer-content, footer div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    max-width: auto;
+    height: 100%;
+}
+
+footer p {
+    margin: 0;
+    text-shadow: 0px 0px 8px #f1f1f1;
+}
+
+footer .fab, .fa-facebook, .fa-brands, .fa-tiktok {
+    font-size: 22px;
+    margin-right: 8px;
+}
+
+
+
+

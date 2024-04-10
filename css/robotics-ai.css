@@ -1,0 +1,19 @@
+.right-half {
+    background-image: url(../images/ai-paint2.jpg);
+    background-size: cover;
+    display: flex;
+    flex-wrap: column;
+    justify-content: left;
+    gap: 1.5em;
+    align-items: left;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 448px) {
+    .robotics-container .burger-menu h2 {
+        display: block;
+    }
+}
