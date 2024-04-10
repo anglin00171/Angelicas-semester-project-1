@@ -3,9 +3,9 @@
     background-size: cover;
     display: flex;
     flex-wrap: column;
-    justify-content: center;
+    justify-content: left;
     gap: 1em;
-    align-items: center;
+    align-items: left;
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
