@@ -1,6 +1,4 @@
 
-
-
 :root {
     --text-shadow: 0px 0px 8px #f1f1f1;
     --font-family-main: nunito, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -11,6 +9,8 @@
 body {
     background-color: #e3fffe;
     margin: 0 auto;
+    max-width: 100%;
+    height: auto;
 }
 
 p, h2, h3, h4, nav ul li a {
@@ -25,7 +25,7 @@ p, h2, h3, h4, nav ul li a {
     height: auto;
 }
 
-@media (max-width: 660px) {
+@media (max-width: 750px) {
     .split-index {
         flex-direction: column;
     }
@@ -42,13 +42,20 @@ p, h2, h3, h4, nav ul li a {
 .left-half {
     background-color: #eff5e4;
 }
+@media (max-width: 750px) {
+    .right-half {
+        min-height: 350px;
+    }
+}
+
 
 @media (max-width: 660px) {
     .left-half {
         padding-bottom: 0.8em;
+        height: 10em;
     }
     .right-half {
-        min-height: 250px;
+        min-height: 350px;
     }
 }
 
@@ -133,7 +140,7 @@ label, #burger-menu-checkbox {
     display: none;
 }
 
-@media (max-width: 660px) {
+@media (max-width: 749px) {
 
     body {background-color: #e3fffe;}
 
@@ -160,14 +167,14 @@ label, #burger-menu-checkbox:checked ~ nav {
 }
 
 .burger-menu {
-    font-size: 40px;
+    font-size: 30px;
     padding-left: 0.3em;
     margin-bottom: -0.6em;
 }
 
 div .burger-menu p a img {
     max-width: 4.6em;
-    height: 1.6em;
+    height: 2em;
 }
 
 p a {
@@ -175,13 +182,12 @@ p a {
 }
 
 p {
-    margin: -0.4em 0 -0 0.4em;
+
 }
 
 .burger-menu h2 {
     display: flex;
     margin-top: -0.5em;
-    font-size: 70px;
     font-weight: 600;
     font-family: var(--font-family-main);
 }
@@ -217,7 +223,6 @@ div .burger-menu p a img {
 }
 div .burger-menu p a img {
     height: 1.1em;
-    margin-left: -15px;
 }
 }
 /**/
@@ -263,6 +268,8 @@ h2 a {
 .aside .shimmer5 a,
 .aside .shimmer6 a {
     display: flex;
+    flex-direction: row;
+    justify-content: center;
     color: #141414;
     margin: 0.5em;
     width: 155px;
@@ -304,34 +311,51 @@ h2 a {
     }
  }
 
+aside {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
 aside .kids img,
 aside .teach img,
 aside .re img {
     max-width: 300px;
     height: auto;
-    margin: 0 auto;
-    padding: 2em;
+    padding: 1em 1em 0.5em 0em;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
- }
-
- aside {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+    align-content: center;
  }
 
  aside p {
-    max-width: 600px;
     padding-top: 3em;
  }
 
  .learn {
-    padding-left: 0.2em;
     font-weight: 500;
+}
+
+@media (max-width: 370px) {
+    nav ul li a {
+        font-size: 20px; 
+        padding: 5px 10px; 
+    }
+    .burger-menu h2, p, h2, h3, h4 {
+        font-size: smaller;
+    }
+    .body {
+       
+    }
+    .split-index,
+    .right-half,
+    .left-half,
+    .learn {
+        
+    }
+    
 }

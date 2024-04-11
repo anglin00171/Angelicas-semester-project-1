@@ -10,11 +10,8 @@
     justify-content: center;
     position: -webkit-sticky;
     position: sticky;
-    top: 5px;
     background-color: #ffffff50;
-    padding: 1em 0.5em;
     max-width: 100%;
-    
     }
 
 h2 {
@@ -23,11 +20,9 @@ h2 {
     justify-content: center;
     align-items: center;
     align-content: center;
-    max-width: 100%;
-    margin: 0;
-    font-size: 58px;
     color: #141414;
-    padding-left: 0.1em;
+    font-size: 58px;
+    padding: 0.6em;
     letter-spacing: 5%;
     font-weight: 400;
     font-family: var(--font-family-main);
@@ -68,7 +63,7 @@ h4 {
     font-weight: 600;
     line-height: 1.2em;
     color: #141414;
-    letter-spacing: 1px;
+    letter-spacing: 5%;
     font-family: var(--font-family-main);
 }
 

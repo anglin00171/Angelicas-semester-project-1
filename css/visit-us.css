@@ -50,3 +50,33 @@ letter-spacing: -2px;
 text-shadow: 0px 0px 8px #ffd700;
 padding-right: 1em;
 }
+
+.hall img {
+    max-width: 600px;
+}
+
+.skelett img {
+    max-width: 500px;
+}
+
+.access img {
+    max-width: 500px;
+}
+
+.location {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h2, h3, h4, p {
+    padding: 0;
+}
+p {
+    margin: 0;
+}
+
+h2 {
+    margin-bottom: 0em;
+}

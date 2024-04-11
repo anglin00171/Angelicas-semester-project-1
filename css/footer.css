@@ -8,19 +8,10 @@ footer {
     padding-top: 2em;
     padding-bottom: 2em;
     align-items: center;
+    text-align: center;
     background-color: #a8fff5;
     color: #141414;
     font-family: var(--font-family-main);
-}
-
-footer .footer-content, footer div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    max-width: auto;
-    height: 100%;
 }
 
 footer p {
@@ -29,7 +20,6 @@ footer p {
 }
 
 footer .fab, .fa-facebook, .fa-brands, .fa-tiktok {
-    font-size: 22px;
     margin-right: 8px;
 }
 
