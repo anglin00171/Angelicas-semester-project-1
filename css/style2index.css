@@ -1,4 +1,4 @@
-.right-half a {
+.right-half a img {
     position: absolute;
     top: 34%;
     left: 55%;
@@ -10,18 +10,21 @@
     text-align: center;
 }
 
-.right-half h1 {
-    margin: 0;
-    font-size: 52px;
-    font-weight: 600;
-    letter-spacing: 1px;
-    font-family: nunito, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+.right-half img {
+    width: 100%;
 }
 
-.right-half h1:hover {
-    font-size: 52px;
-    text-shadow: 0px 0px 8px #00f2ff;
-    color: #f1f1f1;
-    letter-spacing: 2px;
-    padding: 0.2em;
+
+
+.left-half .atom {
+    background-image: url(../images/atom.png);
+    display: flex;
+    flex-wrap: column;
+    justify-content: left;
+    gap: 1em;
+    align-items: left;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
 }

@@ -4,11 +4,9 @@
     --font-family-main: nunito, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-/* global styles */
-
 body {
     background-color: #e3fffe;
-    margin: 0 auto;
+    margin: 0;
     max-width: 100%;
     height: auto;
 }
@@ -18,12 +16,60 @@ p, h2, h3, h4, nav ul li a {
     font-family: var(--font-family-main);
 }
 
+/* The sticky header and science museum text and logo*/
+
+.sticky-header {
+    position: sticky;
+    top: 0;
+    background: #edf5f9;
+    z-index: 1000;
+    border-bottom: 1px solid #dcdcdc;
+    opacity: 0.9;
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.sticky-header .logo {
+    flex: 0 1 auto;
+    margin-right: auto;
+}
+
+.sticky-header h2 {
+    flex-grow: 1;
+    text-align: center;
+    margin: 0;
+    font-size: 2em;
+}
+
+.sticky-header h2 a {
+    color: inherit;
+    font-weight: 200;
+    font-size: 48px;
+    text-decoration: none;
+}
 
 .split-index {
     display: flex;
     flex-wrap: wrap;
     height: auto;
 }
+
+.left-half {
+    background-image: url(../images/atom.png);
+    display: flex;
+    flex-wrap: column;
+    justify-content: left;
+    gap: 1em;
+    align-items: left;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+}
+
 
 @media (max-width: 750px) {
     .split-index {
@@ -34,13 +80,14 @@ p, h2, h3, h4, nav ul li a {
     }
 }
 
-.left-half, .right-half {
+.split-index .left-half, .right-half {
     flex: 1;
-    max-height: 100%;
+    width: 100%;
+    height: 40em;
 }
 
 .left-half {
-    background-color: #eff5e4;
+    background-color: #dffdfe;
 }
 @media (max-width: 750px) {
     .right-half {
@@ -48,47 +95,45 @@ p, h2, h3, h4, nav ul li a {
     }
 }
 
-
-@media (max-width: 660px) {
-    .left-half {
-        padding-bottom: 0.8em;
-        height: 10em;
-    }
-    .right-half {
-        min-height: 350px;
-    }
-}
-
 nav ul {
+    padding: 0;
     list-style-type: none;
-    margin-left: -1.4em;
 }
 
 nav ul li a {
-    display: inline-block;
-    margin-left: 0.3em;
-    padding: 10px 20px;
-    margin: 2px;
-    color: #141414;
+    display: inline-block;      
+    margin: 10px 0;      
+    font-size: 1em;   
+    text-decoration: none;
+    color: inherit;  
     text-shadow: var(--text-shadow);
     letter-spacing: 1px;
-    font-weight: 600;
-    text-decoration: none;
     transition: transform 0.5s ease;
-    font-size: 38px;
-    font-family: var(--font-family-main);
+    padding: 2px 5px;
 }
 
 nav ul li a:hover {
     transform: translateX(10px);
     color: #f1f1f1;
     background-color: #141414;
-    padding-right: 1em;
     border-radius: 5px;
 }
 
 nav {
-    margin-top: 0.5em;
+    position: absolute;  
+    top: 0;              
+    right: 0;             
+    width: 100%;        
+    height: 100vh;       
+    background-color: rgba(242, 242, 242, 0.8);
+    color: white;        
+    display: none;       
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    z-index: 1500;  
+    margin-top: 3.9em;
+    
 }
 
 .right-half {
@@ -130,7 +175,7 @@ nav {
 }
 
 .logo {
-    max-width: 10em;
+    max-width: 6em;
     display: inline-block;
 }
 
@@ -140,9 +185,10 @@ label, #burger-menu-checkbox {
     display: none;
 }
 
-@media (max-width: 749px) {
+@media (max-width: 2560px) {
 
-    body {background-color: #e3fffe;}
+    body {background-color: #e3fffe;
+    }
 
     nav, #burger-menu-checkbox {
         display: none;
@@ -152,38 +198,20 @@ label, #burger-menu-checkbox:checked ~ nav {
            display: block;
            color: #2a2a2a;
            cursor: pointer;
-       }
-
-   .logo {
-   display: none;
-
-    }
-}
-
-@media (min-width: 660px) {
-    .burger-menu p a {
-        display: none;
-    }
+           max-width: 300px;
+           max-height: 400px;
+         }
 }
 
 .burger-menu {
     font-size: 30px;
-    padding-left: 0.3em;
-    margin-bottom: -0.6em;
 }
 
-div .burger-menu p a img {
+div .burger-menu img {
     max-width: 4.6em;
     height: 2em;
 }
 
-p a {
-    text-decoration: none;
-}
-
-p {
-
-}
 
 .burger-menu h2 {
     display: flex;
@@ -208,7 +236,7 @@ p {
         margin-top: -1.4em;
         margin-left: 4px;
 }
-div .burger-menu p a img {
+div .burger-menu img {
     max-width: 3em;
     margin-top: 0.1em;
     margin-left: -10px;
@@ -221,23 +249,20 @@ div .burger-menu p a img {
         margin-top: -1.95em;
         margin-left: -2px;
 }
-div .burger-menu p a img {
+div .burger-menu img {
     height: 1.1em;
 }
 }
-/**/
 
-p a, h2 a {
+h2 a {
     text-decoration: none;
-    display: inline-block;
 }
 
 h2 a {
     display: flex;
     flex-wrap: wrap;
-    color: #f11800;
     line-height: 0.7em;
-    padding: 1em 0.5em;
+    padding-right: 1em;
 }
 
 .glowh1 {
@@ -249,7 +274,7 @@ h2 a {
     font-family: var(--font-family-main);
 }
 
-/* h2 in right-side is hidden for semantic purposes*/
+/* h1 in right-side is hidden for semantic purposes*/
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -270,14 +295,15 @@ h2 a {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    color: #141414;
+    color: #f1f1f1;
     margin: 0.5em;
     width: 155px;
     height: 59px;
     padding: 0.4em 0.8em;
-    border-radius: 5px;
-    background-color: #fe0000a0;
+    border-radius: 0.5em;
+    background-color: #141414;
     letter-spacing: 1px;
+    text-align: center;
     line-height: 1.1em;
     font-weight: 500;
     text-decoration: none;
@@ -293,8 +319,8 @@ h2 a {
  .aside .shimmer5 a:hover,
  .aside .shimmer6 a:hover {
     transform: translateX(10px);
-    color: #f1f1f1;
-    background-color: #141414;
+    color: #141414;
+    background-color: #f1f1f1;
     font-weight: 400;
     text-shadow: var(--text-shadow);
  }
@@ -332,30 +358,13 @@ aside .re img {
     align-content: center;
  }
 
- aside p {
-    padding-top: 3em;
+ aside .teach img {
+    max-height: 199px;
+    width: 400px;
  }
 
- .learn {
-    font-weight: 500;
-}
+ aside .re img {
+    max-height: 199px;
+ }
 
-@media (max-width: 370px) {
-    nav ul li a {
-        font-size: 20px; 
-        padding: 5px 10px; 
-    }
-    .burger-menu h2, p, h2, h3, h4 {
-        font-size: smaller;
-    }
-    .body {
-       
-    }
-    .split-index,
-    .right-half,
-    .left-half,
-    .learn {
-        
-    }
-    
-}
+

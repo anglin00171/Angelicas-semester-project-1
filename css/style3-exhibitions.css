@@ -5,36 +5,28 @@
 .right-half .biomed-container,
 .right-half .eco-container,
 .right-half .learn {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    position: -webkit-sticky;
-    position: sticky;
-    background-color: #ffffff50;
-    max-width: 100%;
+   background-color: #ffffff50;
+   padding: 0.3em 1em;
     }
 
 h2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
     color: #141414;
-    font-size: 58px;
-    padding: 0.6em;
+    font-size: 36px;
+    margin: 0;
+    max-width: 200px;
     letter-spacing: 5%;
     font-weight: 400;
     font-family: var(--font-family-main);
 }
 
 h3 {
+    display: flex;
     line-height: 1.1em;
     font-size: 24px;
     margin: 0;
     padding: 1em 1em 1.4em 0;
     font-style: italic;
-    font-weight: 600;
+    font-weight: 400;
     color: #141414;
     font-family: var(--font-family-main);
 }
@@ -46,7 +38,7 @@ h4 {
     color: #141414;
     padding-left: 0.3em;
     padding-top: 0.5em;
-    font-weight: 600;
+    font-weight: 300;
     margin-top: 0;
     letter-spacing: 5%;
     line-height: 1em;
@@ -60,7 +52,7 @@ h4 {
 .biomed-container p,
 .eco-container p {
     font-size: 21px;
-    font-weight: 600;
+    font-weight: 300;
     line-height: 1.2em;
     color: #141414;
     letter-spacing: 5%;

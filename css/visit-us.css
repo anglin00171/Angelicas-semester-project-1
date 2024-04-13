@@ -5,51 +5,18 @@
     flex-wrap: wrap;
     align-items: left;
     max-width: 100%;
-    padding: 1em;
-}
-
-.right-half a {
-    text-decoration: none;
-    display: inline-block;
-}
-
-.right-half .image-container1,
-.right-half .image-container2,
-.right-half .image-container3,
-.right-half .image-container4,
-.right-half .image-container5,
-.right-half .image-container6,
-.right-half .glowh1 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: left;
-    background-color: rgba(20, 20, 20, 0.039);
 }
 
 div h2 {
     display: inline-block;
     color: #141414;
     letter-spacing: -1px;
-    font-weight: 600;
     text-decoration: none;
     transition: transform 0.5s ease;
     font-size: 36px;
     font-family: var(--font-family-main);
     }
     
-.hours h2:hover,
-.admission h2:hover,
-.location h2:hover,
-.accessibility h2:hover,
-.cafe h2:hover,
-.shop h2:hover {
-transform: translateX(10px);
-color: #f1f1f1;
-font-size: 36px;
-letter-spacing: -2px;
-text-shadow: 0px 0px 8px #ffd700;
-padding-right: 1em;
-}
 
 .hall img {
     max-width: 600px;
@@ -63,6 +30,9 @@ padding-right: 1em;
     max-width: 500px;
 }
 
+img {
+    padding: 1em;
+}
 .location {
     display: flex;
     flex-direction: column;
@@ -72,11 +42,14 @@ padding-right: 1em;
 
 h2, h3, h4, p {
     padding: 0;
+    max-width: 400px;
 }
 p {
     margin: 0;
+    padding-top: 0;
 }
 
 h2 {
     margin-bottom: 0em;
 }
+

@@ -1,5 +1,5 @@
 .right-half {
-    background-image: url(../images/exhibition-big.jpg);
+    background-image: url(../images/mavis-cw-164128.jpg);
     background-size: cover;
     display: flex;
     flex-wrap: column;
@@ -15,3 +15,10 @@
 aside .kids img {
     max-width: 214px;
 }
+
+img {
+    margin: 0.5em;
+    border-radius: 50%;
+}
+
+
