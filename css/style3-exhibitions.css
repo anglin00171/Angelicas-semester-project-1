@@ -1,24 +1,4 @@
 
-.right-half .cosmo-container,
-.right-half .evolution-container,
-.right-half .robotics-container,
-.right-half .biomed-container,
-.right-half .eco-container,
-.right-half .learn {
-   background-color: #ffffff50;
-   padding: 0.3em 1em;
-    }
-
-h2 {
-    color: #141414;
-    font-size: 36px;
-    margin: 0;
-    max-width: 200px;
-    letter-spacing: 5%;
-    font-weight: 400;
-    font-family: var(--font-family-main);
-}
-
 h3 {
     display: flex;
     line-height: 1.1em;
@@ -28,7 +8,7 @@ h3 {
     font-style: italic;
     font-weight: 400;
     color: #141414;
-    font-family: var(--font-family-main);
+   
 }
 
 h4 {
@@ -40,9 +20,8 @@ h4 {
     padding-top: 0.5em;
     font-weight: 300;
     margin-top: 0;
-    letter-spacing: 5%;
     line-height: 1em;
-    font-family: var(--font-family-main);
+    
 }
 
 .learn p,
@@ -52,10 +31,7 @@ h4 {
 .biomed-container p,
 .eco-container p {
     font-size: 21px;
-    font-weight: 300;
     line-height: 1.2em;
-    color: #141414;
     letter-spacing: 5%;
-    font-family: var(--font-family-main);
 }
 

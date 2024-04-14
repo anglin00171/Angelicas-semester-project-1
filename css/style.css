@@ -12,9 +12,29 @@ body {
 }
 
 p, h2, h3, h4, nav ul li a {
+    max-width: 400px;
+    letter-spacing: 2px;
+    font-weight: 400;
+    padding-right: 0.6em;
     text-shadow: var(--text-shadow);
     font-family: var(--font-family-main);
 }
+
+.right-half .cosmo-container,
+.right-half .evolution-container,
+.right-half .robotics-container,
+.right-half .biomed-container,
+.right-half .eco-container,
+.right-half .learn {
+   background-color: #ffffff50;
+   padding: 0.3em 1em;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+    }
+
 
 /* The sticky header and science museum text and logo*/
 
@@ -26,7 +46,7 @@ p, h2, h3, h4, nav ul li a {
     border-bottom: 1px solid #dcdcdc;
     opacity: 0.9;
     display: flex;
-    flex-wrap: inherit;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     padding: 10px 20px;
@@ -70,7 +90,6 @@ p, h2, h3, h4, nav ul li a {
     height: auto;
 }
 
-
 @media (max-width: 750px) {
     .split-index {
         flex-direction: column;
@@ -86,9 +105,6 @@ p, h2, h3, h4, nav ul li a {
     height: 40em;
 }
 
-.left-half {
-    background-color: #dffdfe;
-}
 @media (max-width: 750px) {
     .right-half {
         min-height: 350px;
@@ -101,7 +117,7 @@ nav ul {
 }
 
 nav ul li a {
-    display: inline-block;      
+    display: block;      
     margin: 10px 0;      
     font-size: 1em;   
     text-decoration: none;
@@ -109,7 +125,7 @@ nav ul li a {
     text-shadow: var(--text-shadow);
     letter-spacing: 1px;
     transition: transform 0.5s ease;
-    padding: 2px 5px;
+    padding: 5px;
 }
 
 nav ul li a:hover {
@@ -133,7 +149,25 @@ nav {
     align-items: center; 
     z-index: 1500;  
     margin-top: 3.9em;
-    
+    padding-left: 0.5em;
+    border-radius: 5px;
+}
+@media (max-width: 582px) {
+    nav {
+        margin-top: 5.2em;
+    }
+}
+
+@media (max-width: 553px) {
+    nav {
+        margin-top: 6.2em;
+    }
+}
+
+@media (max-width: 486px) {
+    nav {
+        margin-top: 7.5em;
+    }
 }
 
 .right-half {
@@ -141,14 +175,6 @@ nav {
     width: 100%;
     max-width: 100%;
     height: auto;
-}
-
-.right-half .learn {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
 }
 
 .right-half img {
@@ -205,53 +231,6 @@ label, #burger-menu-checkbox:checked ~ nav {
 
 .burger-menu {
     font-size: 30px;
-}
-
-div .burger-menu img {
-    max-width: 4.6em;
-    height: 2em;
-}
-
-
-.burger-menu h2 {
-    display: flex;
-    margin-top: -0.5em;
-    font-weight: 600;
-    font-family: var(--font-family-main);
-}
-
-@media (min-width: 661px) {
-    .burger-menu img {
-        display: block;
-        max-width: 100%;
-        margin-left: auto;
-        margin-right: 2em;
-        padding-bottom: 3em;
-    }
-}
-
-@media (max-width: 660px) {
-    .burger-menu h2 {
-        font-size: 56px;
-        margin-top: -1.4em;
-        margin-left: 4px;
-}
-div .burger-menu img {
-    max-width: 3em;
-    margin-top: 0.1em;
-    margin-left: -10px;
-}
-}
-
-@media (max-width: 300px) {
-    .burger-menu h2 {
-        font-size: 30px;
-        margin-top: -1.95em;
-        margin-left: -2px;
-}
-div .burger-menu img {
-    height: 1.1em;
-}
 }
 
 h2 a {

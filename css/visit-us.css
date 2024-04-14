@@ -1,52 +1,24 @@
 .right-half {
     background-image: url(../images/museum.jpg);
-    background-size: cover;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: left;
-    max-width: 100%;
-}
-
-div h2 {
-    display: inline-block;
-    color: #141414;
-    letter-spacing: -1px;
-    text-decoration: none;
-    transition: transform 0.5s ease;
-    font-size: 36px;
-    font-family: var(--font-family-main);
-    }
-    
-
-.hall img {
-    max-width: 600px;
-}
-
-.skelett img {
-    max-width: 500px;
-}
-
-.access img {
-    max-width: 500px;
-}
-
-img {
-    padding: 1em;
-}
-.location {
+    background-size: cover; 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-h2, h3, h4, p {
-    padding: 0;
+.hall img,
+.skelett img,
+.access img {
     max-width: 400px;
+    padding: 0.5em;
 }
-p {
-    margin: 0;
-    padding-top: 0;
+
+.location {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 h2 {
