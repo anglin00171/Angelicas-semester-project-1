@@ -1,15 +1,13 @@
 
 footer {
     display: flex;
-    justify-content: center;
-    flex-direction: column;
-    gap: 15px;
-    margin: 0;
-    padding-top: 2em;
-    padding-bottom: 2em;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 2em 0.5em;
     align-items: center;
     text-align: center;
-    background-color: #a8fff5;
+    background-color: #45ffe9;
     color: #141414;
     font-family: var(--font-family-main);
 }

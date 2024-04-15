@@ -1,5 +1,5 @@
 .right-half {
-    background-image: url(../images/museum.jpg);
+    background-image: url(../images/admission.jpg);
     background-size: cover; 
     display: flex;
     flex-direction: column;
@@ -10,18 +10,6 @@
 .hall img,
 .skelett img,
 .access img {
-    max-width: 400px;
-    padding: 0.5em;
-}
-
-.location {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-h2 {
-    margin-bottom: 0em;
+    max-width: 90%;
 }
 

@@ -1,0 +1,23 @@
+.right-half {
+    background-image: url(../images/cafe-museum.png);
+    background-size: cover;
+    display: flex;
+    flex-wrap: column;
+    justify-content: left;
+    gap: 1.5em;
+    align-items: left;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+}
+
+.right-half .cafe {
+   background-color: #ffffff50;
+   padding: 0 2.5em 0 1em;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+}

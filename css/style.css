@@ -5,20 +5,61 @@
 }
 
 body {
-    background-color: #e3fffe;
+    background-color: #ffffff;
     margin: 0;
     max-width: 100%;
     height: auto;
 }
 
 p, h2, h3, h4, nav ul li a {
-    max-width: 400px;
-    letter-spacing: 2px;
+    max-width: 100%;
+    width: 100%;
+    letter-spacing: 1px;
     font-weight: 400;
-    padding-right: 0.6em;
     text-shadow: var(--text-shadow);
     font-family: var(--font-family-main);
 }
+
+h2 {
+    font-size: 46px;
+}
+
+h3 {
+    display: flex;
+    line-height: 1.1em;
+    font-size: 24px;
+    margin: 0;
+    padding: 1em 1em 1.4em 0;
+    font-style: italic;
+    font-weight: 400;
+    color: #141414;
+   
+}
+
+h4 {
+    align-self: center;
+    text-align: center;
+    width: 80%;
+    font-size: 24px;
+    color: #141414;
+    padding-left: 1em;
+    padding-top: 0.5em;
+    font-weight: 300;
+    margin-top: 0;
+    line-height: 1em;
+}
+
+.learn p,
+.cosmo-container p,
+.evolution-container p,
+.robotics-container p,
+.biomed-container p,
+.eco-container p {
+    font-size: 21px;
+    line-height: 1.2em;
+    letter-spacing: 5%;
+}
+
 
 .right-half .cosmo-container,
 .right-half .evolution-container,
@@ -26,8 +67,8 @@ p, h2, h3, h4, nav ul li a {
 .right-half .biomed-container,
 .right-half .eco-container,
 .right-half .learn {
-   background-color: #ffffff50;
-   padding: 0.3em 1em;
+   /*background-color: #ffffff50;*/
+   padding: 0 2.5em 0 1em;
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -54,23 +95,40 @@ p, h2, h3, h4, nav ul li a {
 
 .sticky-header .logo {
     flex: 0 1 auto;
-    margin-right: auto;
+    margin-left: auto;
+    max-width: 6em;
+    display: inline-block;
 }
 
 .sticky-header h2 {
     flex-grow: 1;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
     margin: 0;
-    font-size: 2em;
 }
 
 .sticky-header h2 a {
     color: inherit;
-    font-weight: 200;
-    font-size: 48px;
+    font-weight: 400;
+    font-size: 68px;
     text-decoration: none;
 }
 
+@media (max-width: 400px) {
+    .sticky-header h2 a {
+        font-size: 58px;
+    }
+}
+
+@media (max-width: 345px) {
+    .sticky-header h2 a {
+        font-size: 48px;
+    }
+    label nav {
+        font-size: 26px;
+        width: 50%;
+    }
+}
 .split-index {
     display: flex;
     flex-wrap: wrap;
@@ -117,8 +175,8 @@ nav ul {
 }
 
 nav ul li a {
-    display: block;      
-    margin: 10px 0;      
+    display: inline-block;      
+    margin: 0 0 10px 0;      
     font-size: 1em;   
     text-decoration: none;
     color: inherit;  
@@ -137,11 +195,10 @@ nav ul li a:hover {
 
 nav {
     position: absolute;  
-    top: 0;              
-    right: 0;             
+    top: 0;                          
     width: 100%;        
     height: 100vh;       
-    background-color: rgba(242, 242, 242, 0.8);
+    background-color: #f2f2f2b1;
     color: white;        
     display: none;       
     flex-direction: column; 
@@ -152,21 +209,23 @@ nav {
     padding-left: 0.5em;
     border-radius: 5px;
 }
-@media (max-width: 582px) {
+
+/*NAV*/
+@media (max-width: 470px) and (max-width: 570px) {
     nav {
-        margin-top: 5.2em;
+        margin-top: 6.5em;
     }
 }
 
-@media (max-width: 553px) {
+@media (min-width: 469px) and (max-width: 2300px) {
     nav {
-        margin-top: 6.2em;
+        margin-top: 6.5em;
     }
 }
 
-@media (max-width: 486px) {
+@media (min-width: 495px) and (max-width: 2300px) {
     nav {
-        margin-top: 7.5em;
+        margin-top: 5.5em;
     }
 }
 
@@ -200,11 +259,6 @@ nav {
     opacity: 0;
 }
 
-.logo {
-    max-width: 6em;
-    display: inline-block;
-}
-
 /* Hamburger menu */
 
 label, #burger-menu-checkbox {
@@ -213,7 +267,7 @@ label, #burger-menu-checkbox {
 
 @media (max-width: 2560px) {
 
-    body {background-color: #e3fffe;
+    body {background-color: #fff;
     }
 
     nav, #burger-menu-checkbox {
@@ -224,13 +278,14 @@ label, #burger-menu-checkbox:checked ~ nav {
            display: block;
            color: #2a2a2a;
            cursor: pointer;
-           max-width: 300px;
-           max-height: 400px;
+           max-width: 250px;
+           max-height: 340px;
          }
 }
 
 .burger-menu {
-    font-size: 30px;
+    font-size: 36px;
+    font-weight: 500;
 }
 
 h2 a {
@@ -276,13 +331,14 @@ h2 a {
     justify-content: center;
     color: #f1f1f1;
     margin: 0.5em;
-    width: 155px;
-    height: 59px;
+    width: 80%;
+    height: 60px;
     padding: 0.4em 0.8em;
     border-radius: 0.5em;
     background-color: #141414;
     letter-spacing: 1px;
     text-align: center;
+    align-items: center;
     line-height: 1.1em;
     font-weight: 500;
     text-decoration: none;
@@ -316,12 +372,14 @@ h2 a {
     }
  }
 
-aside {
+ aside {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
-    flex-wrap: wrap;
+    align-content: center;
+    flex-wrap: wrap-reverse;
+    padding: 0.5em 1.5em;
 }
 
 aside .kids img,
@@ -337,13 +395,5 @@ aside .re img {
     align-content: center;
  }
 
- aside .teach img {
-    max-height: 199px;
-    width: 400px;
- }
-
- aside .re img {
-    max-height: 199px;
- }
 
 

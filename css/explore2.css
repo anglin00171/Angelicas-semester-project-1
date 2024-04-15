@@ -1,3 +1,7 @@
+main {
+    background-color: #ffff;
+}
+
 .right-half {
     background-image: url(../images/learn-kids.jpg);
     background-size: cover;
@@ -10,4 +14,14 @@
     background-repeat: no-repeat;
     max-width: 100%;
    
+}
+
+.right-half .explore {
+    /*background-color: #ffffff50;*/
+    padding: 0 0 0 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }

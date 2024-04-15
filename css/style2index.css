@@ -1,7 +1,7 @@
 .right-half a img {
     position: absolute;
-    top: 34%;
-    left: 55%;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
     color: #f1f1f1;
@@ -14,8 +14,6 @@
     width: 100%;
 }
 
-
-
 .left-half .atom {
     background-image: url(../images/atom.png);
     display: flex;
@@ -27,4 +25,31 @@
     background-repeat: no-repeat;
     width: 100%;
     height: auto;
+}
+
+.left-half a h3 {
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    align-self: center;
+    margin: 0 auto;
+}
+
+.highlight1 {
+    color: #ff0000;
+    font-weight: 400;
+}
+
+.highlight2 {
+    color: blue;
+    font-weight: 500;
+    font-size: 26px;
+}
+
+.highlight3 {
+    color: #31c300;
+    font-weight: 500;
+    font-size: 26px;
 }
