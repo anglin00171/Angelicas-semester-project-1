@@ -31,15 +31,21 @@
     text-decoration: none;
 }
 
+.left-half a h4 {
+    text-align: center;
+    margin-left: 1em;
+    padding-bottom: 3em;
+}
+
 a {
     text-decoration: none;
     align-self: center;
-    margin: 0 auto;
 }
 
 .highlight1 {
     color: #ff0000;
-    font-weight: 400;
+    font-weight: 500;
+    font-size: 27px;
 }
 
 .highlight2 {
@@ -49,7 +55,7 @@ a {
 }
 
 .highlight3 {
-    color: #31c300;
+    color: #b500de;
     font-weight: 500;
     font-size: 26px;
 }

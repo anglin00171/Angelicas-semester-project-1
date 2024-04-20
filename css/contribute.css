@@ -28,3 +28,8 @@ aside .volunteer {
     align-items: flex-start;
     flex-wrap: wrap; 
 }
+
+div .shimmer,
+a .kids {
+    padding: 2em;
+}

@@ -15,6 +15,7 @@ p, h2, h3, h4, nav ul li a {
     max-width: 100%;
     width: 100%;
     letter-spacing: 1px;
+    margin: 0;
     font-weight: 400;
     text-shadow: var(--text-shadow);
     font-family: var(--font-family-main);
@@ -24,42 +25,35 @@ h2 {
     font-size: 46px;
 }
 
-h3 {
-    display: flex;
-    line-height: 1.1em;
-    font-size: 24px;
+p {
+    font-size: 21px;
+    font-weight: 300;
     margin: 0;
-    padding: 1em 1em 1.4em 0;
+    padding-bottom: 0.6em;
+}
+
+h3 {
+    font-size: 23px;
     font-style: italic;
-    font-weight: 400;
-    color: #141414;
-   
+    padding-bottom: 0.6em;
+    width: 80%
+}
+
+h3 a {
+    color: inherit;
+    font-weight: inherit;
+    font-size: 23px;
+}
+
+h3 a:hover {
+    color: #95ff00;
 }
 
 h4 {
-    align-self: center;
-    text-align: center;
+    text-align: left;
+    font-size: 22px;
     width: 80%;
-    font-size: 24px;
-    color: #141414;
-    padding-left: 1em;
-    padding-top: 0.5em;
-    font-weight: 300;
-    margin-top: 0;
-    line-height: 1em;
 }
-
-.learn p,
-.cosmo-container p,
-.evolution-container p,
-.robotics-container p,
-.biomed-container p,
-.eco-container p {
-    font-size: 21px;
-    line-height: 1.2em;
-    letter-spacing: 5%;
-}
-
 
 .right-half .cosmo-container,
 .right-half .evolution-container,
@@ -67,7 +61,6 @@ h4 {
 .right-half .biomed-container,
 .right-half .eco-container,
 .right-half .learn {
-   /*background-color: #ffffff50;*/
    padding: 0 2.5em 0 1em;
    display: flex;
    flex-direction: column;
@@ -129,6 +122,13 @@ h4 {
         width: 50%;
     }
 }
+
+@media (max-width: 270px) {
+    .sticky-header h2 a {
+        font-size: 38px;
+    }
+}
+/**/
 .split-index {
     display: flex;
     flex-wrap: wrap;
@@ -180,15 +180,17 @@ nav ul li a {
     font-size: 1em;   
     text-decoration: none;
     color: inherit;  
+    font-weight: 500;
+    font-size: 28px;
     text-shadow: var(--text-shadow);
     letter-spacing: 1px;
     transition: transform 0.5s ease;
-    padding: 5px;
+    padding: 12px;
 }
 
 nav ul li a:hover {
     transform: translateX(10px);
-    color: #f1f1f1;
+    color: #95ff00;
     background-color: #141414;
     border-radius: 5px;
 }
@@ -206,8 +208,8 @@ nav {
     align-items: center; 
     z-index: 1500;  
     margin-top: 3.9em;
-    padding-left: 0.5em;
     border-radius: 5px;
+    padding-bottom: 1.5em;
 }
 
 /*NAV*/
@@ -217,17 +219,19 @@ nav {
     }
 }
 
-@media (min-width: 469px) and (max-width: 2300px) {
+@media (min-width: 469px) and (max-width: 2962px) {
     nav {
         margin-top: 6.5em;
     }
 }
 
-@media (min-width: 495px) and (max-width: 2300px) {
+@media (min-width: 342px) and (max-width: 687px)  {
     nav {
-        margin-top: 5.5em;
+        margin-top: 7em;
+        width: 80%;
     }
 }
+
 
 .right-half {
     position: relative;
@@ -265,7 +269,7 @@ label, #burger-menu-checkbox {
     display: none;
 }
 
-@media (max-width: 2560px) {
+@media (max-width: 2962px) {
 
     body {background-color: #fff;
     }
@@ -279,7 +283,7 @@ label, #burger-menu-checkbox:checked ~ nav {
            color: #2a2a2a;
            cursor: pointer;
            max-width: 250px;
-           max-height: 340px;
+           max-height: 300px;
          }
 }
 
@@ -299,15 +303,6 @@ h2 a {
     padding-right: 1em;
 }
 
-.glowh1 {
-    color: #141414;
-    font-size: 58px;
-    font-weight: 700;
-    letter-spacing: -1px;
-    text-shadow: var(--text-shadow);
-    font-family: var(--font-family-main);
-}
-
 /* h1 in right-side is hidden for semantic purposes*/
 .visually-hidden {
     position: absolute;
@@ -320,74 +315,25 @@ h2 a {
     padding: 0;
 }
 
-.aside .shimmer a,
-.aside .shimmer2 a,
-.aside .shimmer3 a,
-.aside .shimmer4 a,
-.aside .shimmer5 a,
-.aside .shimmer6 a {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    color: #f1f1f1;
-    margin: 0.5em;
-    width: 80%;
-    height: 60px;
-    padding: 0.4em 0.8em;
-    border-radius: 0.5em;
-    background-color: #141414;
-    letter-spacing: 1px;
-    text-align: center;
-    align-items: center;
-    line-height: 1.1em;
-    font-weight: 500;
-    text-decoration: none;
-    transition: transform 0.5s ease;
-    font-size: 22px;
-    font-family: var(--font-family-main);
-}
-
- .aside .shimmer a:hover,
- .aside .shimmer2 a:hover,
- .aside .shimmer3 a:hover,
- .aside .shimmer4 a:hover,
- .aside .shimmer5 a:hover,
- .aside .shimmer6 a:hover {
-    transform: translateX(10px);
-    color: #141414;
-    background-color: #f1f1f1;
-    font-weight: 400;
-    text-shadow: var(--text-shadow);
- }
-
- @media (max-width: 270px) {
-    .aside .shimmer a,
-    .aside .shimmer2 a,
-    .aside .shimmer3 a,
-    .aside .shimmer4 a,
-    .aside .shimmer5 a,
-    .aside .shimmer6 a {
-        max-width: 100%;
-        font-size: 22px;
-    }
- }
+/* CTA buttons */
 
  aside {
     display: flex;
     flex-direction: row;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
     align-content: center;
-    flex-wrap: wrap-reverse;
+    gap: 2em;
+    flex-wrap: wrap;
     padding: 0.5em 1.5em;
+    margin: 1em;
 }
 
-aside .kids img,
-aside .teach img,
-aside .re img {
-    max-width: 300px;
+.aside-kids .button-container img {
+    max-width: 100%;
+    width: 700px;
     height: auto;
-    padding: 1em 1em 0.5em 0em;
+    padding: 1em 0em 0.5em 0em;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -397,3 +343,48 @@ aside .re img {
 
 
 
+ .aside-kids .button-container a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #141414;  /* Default background color */
+    color: #f1f1f1;  /* Default text color */
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;  /* Slightly reduced font size for better fit */
+    font-family: var(--font-family-main);
+    transition: all 0.3s ease;  /* Smooth transition for all properties */
+}
+
+.aside-kids .button-container {
+    margin: 0.2em;
+}
+
+
+.aside-kids .button-container a:hover {
+    background-color: #95ff00;
+    color: #141414;
+}
+
+/* Specific button styles */
+.aside-kids .holiday-club a {
+    background-color: #0000c4;  /* Orange for holiday club */
+}
+
+.aside-kids .teachers a {
+    background-color: #008000;  /* Green for teachers */
+}
+
+.aside-kids .researchers a {
+    background-color: #800080;  /* Purple  for researchers */
+}
+
+
+@media (max-width: 600px) {
+    .aside-kids .button-container a {
+        font-size: 18px; 
+    }
+}

@@ -1,26 +1,32 @@
 
 footer {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 2em 0.5em;
+    padding: 2em 1em;
     align-items: center;
     text-align: center;
-    background-color: #45ffe9;
-    color: #141414;
-    font-family: var(--font-family-main);
+    background-color: #181818;
 }
 
-footer p {
+footer a {
+    text-shadow: 0px 0px 8px #141414;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 0 1em;
+    color: #f1f1f1;
     margin: 0;
-    text-shadow: 0px 0px 8px #f1f1f1;
 }
 
 footer .fab, .fa-facebook, .fa-brands, .fa-tiktok {
     margin-right: 8px;
+    color: #f1f1f1;
+    text-shadow: 0px 0px 8px #262626;
 }
 
-
-
+footer a:hover,
+footer .fab, .fa-facebook, .fa-brands, .fa-tiktok:hover {
+    color: #95ff00;
+}
 

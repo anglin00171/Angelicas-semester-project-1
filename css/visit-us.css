@@ -5,11 +5,79 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
+
 }
 
-.hall img,
-.skelett img,
+.skelett img {
+    max-width: 100%;
+}
+
+.hall img {
+    max-width: 100%;
+}
+
 .access img {
-    max-width: 90%;
+max-width: 100%;
 }
 
+.aside-hours {
+    justify-content: left;
+}
+
+
+.aside-tours {
+    display: flex;  
+    flex-direction: row;  
+    align-items: center;  
+    justify-content: space-around;  
+    padding: 20px; 
+}
+
+.text-content {
+    flex: 1;  
+    margin-right: 20px;
+
+.access img {
+    max-width: 100%;  
+    height: auto;  
+}
+}
+
+.aside-access1 {
+    display: flex;  
+    flex-direction: row;  
+    align-items: center; 
+    justify-content: space-between;  
+    padding: 20px;
+}
+
+.accessibility {
+    flex: 1;  
+
+    .skelett {
+        max-width: 100%;  
+        height: auto; 
+    }
+}
+
+.text-section {
+    max-width: 80%;
+    padding-left: 0.3em;
+}
+
+/* Map over Waldemar Thranes Gate Oslo*/
+.map-container {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+}
+
+.map-container iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}

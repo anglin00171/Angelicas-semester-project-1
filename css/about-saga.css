@@ -12,12 +12,47 @@
     height: auto;
 }
 
-aside .kids img {
-    max-width: 214px;
-}
-
 img {
     margin: 0.5em;
 }
 
+.aside-kid .button-container img {
+    max-width: 100%;
+    width: 200px;
+    height: auto;
+    padding: 1em 0em 0.5em 0em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+   }
 
+   .aside-kid .button-container a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #141414;  /* Default background color */
+    color: #f1f1f1;  /* Default text color */
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;  /* Slightly reduced font size for better fit */
+    font-family: var(--font-family-main);
+    transition: all 0.3s ease;  /* Smooth transition for all properties */
+}
+
+.aside-kid .button-container {
+    margin: 0.2em;
+}
+
+.aside-kid .button-container a:hover {
+    background-color: #95ff00;
+    color: #141414;
+}
+
+#kloss {
+    width: auto;
+    max-width: 135px;
+}
