@@ -15,7 +15,7 @@ p, h2, h3, h4, nav ul li a {
     max-width: 100%;
     width: 100%;
     letter-spacing: 1px;
-    margin: 0;
+
     font-weight: 400;
     text-shadow: var(--text-shadow);
     font-family: var(--font-family-main);
@@ -26,16 +26,14 @@ h2 {
 }
 
 p {
-    font-size: 21px;
-    font-weight: 300;
+    font-size: 19px;
     margin: 0;
-    padding-bottom: 0.6em;
+    padding-bottom: 0.2em;
 }
 
 h3 {
     font-size: 23px;
     font-style: italic;
-    padding-bottom: 0.6em;
     width: 80%
 }
 
@@ -68,7 +66,6 @@ h4 {
    align-items: center;
    flex-wrap: wrap;
     }
-
 
 /* The sticky header and science museum text and logo*/
 
@@ -110,6 +107,9 @@ h4 {
 @media (max-width: 400px) {
     .sticky-header h2 a {
         font-size: 58px;
+    }
+    h4, h3 {
+        font-size: 22px;
     }
 }
 
@@ -176,12 +176,12 @@ nav ul {
 
 nav ul li a {
     display: inline-block;      
-    margin: 0 0 10px 0;      
+    margin: 0 0 5px 0;      
     font-size: 1em;   
     text-decoration: none;
     color: inherit;  
     font-weight: 500;
-    font-size: 28px;
+    font-size: 24px;
     text-shadow: var(--text-shadow);
     letter-spacing: 1px;
     transition: transform 0.5s ease;
@@ -189,7 +189,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    transform: translateX(10px);
+    transform: translateX(6px);
     color: #95ff00;
     background-color: #141414;
     border-radius: 5px;
@@ -209,29 +209,41 @@ nav {
     z-index: 1500;  
     margin-top: 3.9em;
     border-radius: 5px;
-    padding-bottom: 1.5em;
+    padding-bottom: 1em;
 }
 
-/*NAV*/
-@media (max-width: 470px) and (max-width: 570px) {
+/*Media Queries for NAV*/
+@media (max-width: 470px) {
     nav {
         margin-top: 6.5em;
     }
 }
 
-@media (min-width: 469px) and (max-width: 2962px) {
+@media (min-width: 398px) {
     nav {
-        margin-top: 6.5em;
+        margin-top: 6.9em;
     }
 }
 
-@media (min-width: 342px) and (max-width: 687px)  {
+@media (min-width: 686px)  {
     nav {
-        margin-top: 7em;
+        margin-top: 5.9em;
+    }
+}
+
+@media (max-width: 345px) {
+    nav {
+        margin-top: 6.1em;
         width: 80%;
     }
 }
 
+@media (min-width: 345px) and (max-width: 400px) {
+    nav {
+        margin-top: 6.8em;
+        width: 80%;
+    }
+}
 
 .right-half {
     position: relative;
@@ -292,6 +304,11 @@ label, #burger-menu-checkbox:checked ~ nav {
     font-weight: 500;
 }
 
+.burger-menu label {
+    font-size: 36px;
+    padding-left: 0.1em;
+}
+
 h2 a {
     text-decoration: none;
 }
@@ -303,7 +320,7 @@ h2 a {
     padding-right: 1em;
 }
 
-/* h1 in right-side is hidden for semantic purposes*/
+/* h1 in right-side is hidden for semantic and correct HTML5 purposes*/
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -341,26 +358,20 @@ h2 a {
     align-content: center;
  }
 
-
-
- .aside-kids .button-container a {
+.aside-kids .button-container a {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
     padding: 15px;
     border-radius: 5px;
-    background-color: #141414;  /* Default background color */
-    color: #f1f1f1;  /* Default text color */
+    background-color: #141414;
+    color: #f1f1f1; 
     text-align: center;
     text-decoration: none;
-    font-size: 20px;  /* Slightly reduced font size for better fit */
+    font-size: 20px;  
     font-family: var(--font-family-main);
-    transition: all 0.3s ease;  /* Smooth transition for all properties */
-}
-
-.aside-kids .button-container {
-    margin: 0.2em;
+    transition: all 0.3s ease;  
 }
 
 

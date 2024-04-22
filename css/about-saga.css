@@ -18,9 +18,9 @@ img {
 
 .aside-kid .button-container img {
     max-width: 100%;
-    width: 200px;
-    height: auto;
-    padding: 1em 0em 0.5em 0em;
+    width: 185px;
+    height: 200px;
+    padding: 1em 0 0 0;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -32,27 +32,20 @@ img {
     align-items: center;
     justify-content: center;
     width: 100%;
+    max-width: 78%;
     padding: 15px;
+    margin-left: 0.4em;
     border-radius: 5px;
-    background-color: #141414;  /* Default background color */
-    color: #f1f1f1;  /* Default text color */
+    background-color: #141414;  
+    color: #f1f1f1;  
     text-align: center;
     text-decoration: none;
-    font-size: 20px;  /* Slightly reduced font size for better fit */
+    font-size: 20px;  
     font-family: var(--font-family-main);
-    transition: all 0.3s ease;  /* Smooth transition for all properties */
-}
-
-.aside-kid .button-container {
-    margin: 0.2em;
+    transition: all 0.3s ease; 
 }
 
 .aside-kid .button-container a:hover {
     background-color: #95ff00;
     color: #141414;
-}
-
-#kloss {
-    width: auto;
-    max-width: 135px;
 }

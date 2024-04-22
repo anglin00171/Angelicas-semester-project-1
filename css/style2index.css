@@ -1,3 +1,4 @@
+/* This is the additional style on indexpage*/
 .right-half a img {
     position: absolute;
     top: 50%;
@@ -43,19 +44,19 @@ a {
 }
 
 .highlight1 {
-    color: #ff0000;
+    color: #008000;
     font-weight: 500;
-    font-size: 27px;
+    font-size: 34px;
 }
 
 .highlight2 {
-    color: blue;
+    color: #0000c4;
     font-weight: 500;
-    font-size: 26px;
+    font-size: 32px;
 }
 
 .highlight3 {
-    color: #b500de;
+    color: #800080;
     font-weight: 500;
-    font-size: 26px;
+    font-size: 32px;
 }

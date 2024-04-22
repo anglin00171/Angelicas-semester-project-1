@@ -33,3 +33,7 @@ div .shimmer,
 a .kids {
     padding: 2em;
 }
+
+aside h2, p {
+    text-align: center;
+}
