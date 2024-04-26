@@ -1,5 +1,5 @@
 .right-half {
-    background-image: url(../images/people-219985_1280.jpg);
+    background-image: url(../images/contribute2.png);
     background-size: cover;
     display: flex;
     flex-wrap: wrap;
@@ -34,6 +34,12 @@ a .kids {
     padding: 2em;
 }
 
-aside h2, p {
+aside h2 {
     text-align: center;
+    padding-top: 0.3em;
+}
+
+aside p {
+    text-align: left;
+    width: 80%;
 }

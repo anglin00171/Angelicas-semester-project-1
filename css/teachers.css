@@ -11,3 +11,14 @@
     width: 100%;
     height: auto;
 }
+
+aside p {
+    text-align: left;
+    width: 80%;
+}
+
+.teaching-board {
+    max-width: 100%;
+    height: auto;
+    width: auto;
+}

@@ -12,3 +12,14 @@
     height: auto;
    
 }
+
+aside p {
+    text-align: center;
+}
+
+.five {
+    max-width: 100%;
+    height: auto;
+    width: auto;
+}
+

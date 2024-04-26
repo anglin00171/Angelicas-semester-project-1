@@ -21,3 +21,15 @@
    align-items: center;
    flex-wrap: wrap;
 }
+
+aside h2, h3, h4, h5 {
+    margin: 0;
+}
+
+aside h2 {
+    text-align: center;
+}
+
+aside .opening-hours h2 {
+    padding-bottom: 0.5em;
+}

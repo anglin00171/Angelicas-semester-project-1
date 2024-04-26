@@ -15,3 +15,9 @@
 aside p {
     text-align: center;
 }
+
+.dino-skelett {
+    max-width: 100%;
+    height: auto;
+    width: auto;
+}

@@ -1,5 +1,5 @@
 .right-half {
-    background-image: url(../images/bumperswing-big.jpg);
+    background-image: url(../images/building-blocks-297773_640.png);
     background-size: cover;
     display: flex;
     flex-wrap: column;
@@ -10,4 +10,19 @@
     background-repeat: no-repeat;
     width: 100%;
     height: auto;
+}
+
+aside h2, h3, h4, h5 {
+    margin: 0;
+}
+
+aside p {
+    text-align: left;
+    width: 80%;
+}
+
+.lego-man {
+    max-width: 100%;
+    height: auto;
+    width: auto;
 }

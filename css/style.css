@@ -14,8 +14,8 @@ body {
 p, h2, h3, h4, nav ul li a {
     max-width: 100%;
     width: 100%;
+    margin-top: 0;
     letter-spacing: 1px;
-
     font-weight: 400;
     text-shadow: var(--text-shadow);
     font-family: var(--font-family-main);
@@ -25,14 +25,21 @@ h2 {
     font-size: 46px;
 }
 
+@media (max-width: 350px) {
+    h2 {
+        font-size: 36px;
+    }
+}
+
 p {
     font-size: 19px;
     margin: 0;
-    padding-bottom: 0.2em;
+    padding-bottom: 0.5em;
 }
 
 h3 {
-    font-size: 23px;
+    padding-top: 0.8em;
+    font-size: 22px;
     font-style: italic;
     width: 80%
 }
@@ -49,8 +56,14 @@ h3 a:hover {
 
 h4 {
     text-align: left;
-    font-size: 22px;
+    font-size: 20px;
     width: 80%;
+    margin: 0;
+    padding-bottom: 0.5em;
+}
+
+p, h3, h4 {
+    padding-left: 0.5em;
 }
 
 .right-half .cosmo-container,
@@ -58,7 +71,8 @@ h4 {
 .right-half .robotics-container,
 .right-half .biomed-container,
 .right-half .eco-container,
-.right-half .learn {
+.right-half .learn,
+.right-half .explore {
    padding: 0 2.5em 0 1em;
    display: flex;
    flex-direction: column;
@@ -171,6 +185,7 @@ h4 {
 
 nav ul {
     padding: 0;
+    margin-top: 0.5em;
     list-style-type: none;
 }
 
@@ -185,7 +200,7 @@ nav ul li a {
     text-shadow: var(--text-shadow);
     letter-spacing: 1px;
     transition: transform 0.5s ease;
-    padding: 12px;
+    padding: 9.5px;
 }
 
 nav ul li a:hover {
@@ -294,8 +309,8 @@ label, #burger-menu-checkbox:checked ~ nav {
            display: block;
            color: #2a2a2a;
            cursor: pointer;
-           max-width: 250px;
-           max-height: 300px;
+           max-width: 200px;
+           max-height: 380px;
          }
 }
 
@@ -306,7 +321,6 @@ label, #burger-menu-checkbox:checked ~ nav {
 
 .burger-menu label {
     font-size: 36px;
-    padding-left: 0.1em;
 }
 
 h2 a {
@@ -320,7 +334,7 @@ h2 a {
     padding-right: 1em;
 }
 
-/* h1 in right-side is hidden for semantic and correct HTML5 purposes*/
+/* h1 in right-side is hidden for semantic and correct HTML5 */
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -333,7 +347,6 @@ h2 a {
 }
 
 /* CTA buttons */
-
  aside {
     display: flex;
     flex-direction: row;
@@ -363,6 +376,7 @@ h2 a {
     align-items: center;
     justify-content: center;
     width: 100%;
+    max-width: 96%;
     padding: 15px;
     border-radius: 5px;
     background-color: #141414;
@@ -373,7 +387,6 @@ h2 a {
     font-family: var(--font-family-main);
     transition: all 0.3s ease;  
 }
-
 
 .aside-kids .button-container a:hover {
     background-color: #95ff00;
@@ -397,5 +410,25 @@ h2 a {
 @media (max-width: 600px) {
     .aside-kids .button-container a {
         font-size: 18px; 
+    }
+}
+
+/* Dinosaur at footer*/
+.dino {
+    width: 50px;
+    max-width: 100px;
+    min-width: 30px;
+    margin-top: 10.8vh;
+    position: fixed;
+    padding-left: 0.1em;
+    padding-bottom: 0.3em;
+    
+}
+
+
+@media (min-width: 315px) and (max-width: 1500px) {
+.dino {
+        bottom: 2px;
+        width: 60px;
     }
 }

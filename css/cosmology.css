@@ -1,5 +1,5 @@
 .right-half {
-    background-image: url(../images/celso-405219.jpg);
+    background-image: url(../images/eclipse.png);
     background-size: cover;
     display: flex;
     flex-wrap: column;
@@ -13,3 +13,17 @@
   
 }
 
+aside h2, p {
+    text-align: center;
+}
+
+.rocket {
+    max-width: 100%;
+    height: auto;
+    width: auto;
+}
+
+.telescope {
+    max-width: 30%;
+    padding-left: 16em;
+}

@@ -1,6 +1,3 @@
-main {
-    background-color: #ffff;
-}
 
 .right-half {
     background-image: url(../images/learn-kids.jpg);
@@ -16,12 +13,11 @@ main {
    
 }
 
-.right-half .explore {
-    /*background-color: #ffffff50;*/
-    padding: 0 0 0 1em;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+aside h2, h3, h4, h5 {
+    margin: 0;
+}
+
+aside p {
+    text-align: left;
+    width: 80%;
 }

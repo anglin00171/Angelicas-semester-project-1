@@ -1,69 +1,20 @@
 .right-half {
-    background-image: url(../images/admission.jpg);
+    background-image: url(../images/reading-2762010_1280.jpg);
     background-size: cover; 
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    width: 100%;
+}
+
+.right-half .learn h2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    width: 100%;
-
-}
-
-.skelett img {
-    max-width: 100%;
-}
-
-.hall img {
-    max-width: 100%;
-}
-
-.access img {
-max-width: 100%;
-}
-
-.aside-hours {
-    justify-content: left;
-}
-
-
-.aside-tours {
-    display: flex;  
-    flex-direction: row;  
-    align-items: center;  
-    justify-content: space-around;  
-    padding: 20px; 
-}
-
-.text-content {
-    flex: 1;  
-    margin-right: 20px;
-
-.access img {
-    max-width: 100%;  
-    height: auto;  
-}
-}
-
-.aside-access1 {
-    display: flex;  
-    flex-direction: row;  
-    align-items: center; 
-    justify-content: space-between;  
-    padding: 20px;
-}
-
-.accessibility {
-    flex: 1;  
-
-    .skelett {
-        max-width: 100%;  
-        height: auto; 
-    }
-}
-
-.text-section {
-    max-width: 80%;
-    padding-left: 0.3em;
+    align-items: left;
+    flex-wrap: wrap;
 }
 
 /* Map over Waldemar Thranes Gate Oslo*/
@@ -83,15 +34,53 @@ max-width: 100%;
     position: absolute;
 }
 
-aside h2, h3, h4, h5 {
-    margin: 0;
+.open-hours-container,
+.open-hours-container2,
+.open-hours-container3 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin-left: 1.5em;
+    margin-top: 1.1em;
 }
 
-aside h2 {
-    padding-bottom: 0.5em;
+.open-hours-container2 {
+    flex-direction: row-reverse;
 }
 
-aside h3 {
-    padding: 0.5em 0;
-    font-size: 25px;
+.text-content2,
+.text-content3 {
+    padding: 0.5em;
+    width: 50%;
+}
+
+.text-content, .text-content2, .text-content3, .image-content {
+    flex: 1;
+}
+
+.family {
+    padding-top: 3em;
+    width: 100%; 
+    height: auto; 
+}
+
+@media (max-width: 650px) {
+    .open-hours-container {
+        flex-direction: column;
+    }
+}
+
+.skelett img,
+.hall img,
+.access img {
+    max-width: 100%;
+    height: auto;
+}
+
+.section {
+    padding: 0.5em 1.5em;
+    margin-left: 2.5em;
+    width: 70%;
 }

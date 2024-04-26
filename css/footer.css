@@ -4,7 +4,7 @@ footer {
     justify-content: space-evenly;
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 4em 1em;
+    padding: 2em 1em;
     align-items: center;
     text-align: center;
     background-color: #141414;
@@ -16,7 +16,11 @@ footer a {
     font-size: 16px;
     padding: 0 1em;
     color: #f1f1f1;
-    margin: 0;
+    margin: 1em;
+}
+
+footer div {
+    padding: 1.2em;
 }
 
 footer .fab, .fa-facebook, .fa-brands, .fa-tiktok {
@@ -30,3 +34,9 @@ footer .fab, .fa-facebook, .fa-brands, .fa-tiktok:hover {
     color: #95ff00;
 }
 
+body .all-rights { 
+    font-family: var(--font-family-main);
+    text-align: right;
+    font-size: 11px;
+    padding-right: 0.5em;
+}

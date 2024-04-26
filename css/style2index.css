@@ -1,4 +1,4 @@
-/* This is the additional style on indexpage*/
+/* This is the additional style on left and right half*/
 .right-half a img {
     position: absolute;
     top: 50%;
@@ -34,8 +34,8 @@
 
 .left-half a h4 {
     text-align: center;
-    margin-left: 1em;
-    padding-bottom: 3em;
+    margin-left: 0.8em;
+    padding-bottom: 2.5em;
 }
 
 a {
@@ -43,20 +43,31 @@ a {
     align-self: center;
 }
 
+.left-half a {
+    padding-top: 1.5em;
+}
+
 .highlight1 {
     color: #008000;
     font-weight: 500;
-    font-size: 34px;
+    font-size: 28px;
 }
 
 .highlight2 {
     color: #0000c4;
     font-weight: 500;
-    font-size: 32px;
+    font-size: 28px;
 }
 
 .highlight3 {
     color: #800080;
     font-weight: 500;
-    font-size: 32px;
+    font-size: 28px;
 }
+
+.dino-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
