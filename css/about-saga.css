@@ -16,6 +16,15 @@ img {
     margin: 0.5em;
 }
 
+h2 {
+    display: flex;
+    justify-content: center;
+}
+
+.about p {
+    padding: 2em 4em;
+}
+
 .aside-kid .button-container img {
     max-width: 100%;
     width: 185px;

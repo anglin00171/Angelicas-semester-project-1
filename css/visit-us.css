@@ -39,21 +39,41 @@
 .open-hours-container3 {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
     justify-content: center;
-    padding: 20px;
-    margin-left: 1.5em;
-    margin-top: 1.1em;
+    padding: 20px; 
 }
 
+.open-hours-container {
+    margin-left: 1.7em;
+}
 .open-hours-container2 {
     flex-direction: row-reverse;
+    margin-left: 1.4em;
+}
+
+.open-hours-container3 {
+    margin-left: 1.5em;
 }
 
 .text-content2,
 .text-content3 {
-    padding: 0.5em;
-    width: 50%;
+    padding: 1em;
+    max-width: 50%;
+}
+
+@media (max-width: 700px) {
+    .text-content2,
+    .text-content3,
+    .text-section {
+        max-width: 100%;
+    }
+}
+.text-content {
+    margin: 0em 1em 0 0.5em ;
+}
+
+.text-content p {
+    padding-top: 0.6em;
 }
 
 .text-content, .text-content2, .text-content3, .image-content {
@@ -73,14 +93,33 @@
 }
 
 .skelett img,
-.hall img,
 .access img {
     max-width: 100%;
     height: auto;
+    width: 300px;
+    margin: 4em 1em 0 0;
 }
 
 .section {
     padding: 0.5em 1.5em;
-    margin-left: 2.5em;
+    margin-left: 2em;
     width: 70%;
+}
+
+.text-section h2 {
+    padding-left: 0.2em;
+    margin-top: 0.3em;
+}
+
+.text-section {
+    width: 100%;
+}
+
+h3 {
+    margin-bottom: 4px;
+}
+
+.parking p {
+    padding-left: 0;
+    padding-bottom: 2em;
 }

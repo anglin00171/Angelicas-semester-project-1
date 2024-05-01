@@ -17,13 +17,12 @@ aside h2, p {
     text-align: center;
 }
 
-.rocket {
-    max-width: 100%;
-    height: auto;
-    width: auto;
+aside p {
+    width: 80%;
 }
 
 .telescope {
-    max-width: 30%;
-    padding-left: 16em;
+    max-width: 100%;
+    height: auto;
+    width: auto;
 }

@@ -54,5 +54,34 @@ form #department {
 .send-button:hover {
     background-color: #95ff00;
     color: #141414;
-    text-transform: capitalize;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1em;
+    padding: 1em;
+    text-align: center;
+    margin-top: 2em;
+}
+
+.adress {
+   
+}
+
+.contact {
+   
+}
+
+.here a {
+    text-decoration: none;
+    color: #008000;
+}
+
+.here a:hover {
+    color: #95ff00;
 }

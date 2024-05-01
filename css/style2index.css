@@ -15,27 +15,15 @@
     width: 100%;
 }
 
-.left-half .atom {
-    background-image: url(../images/atom.png);
-    display: flex;
-    flex-wrap: column;
-    justify-content: left;
-    gap: 1em;
-    align-items: left;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: auto;
-}
-
 .left-half a h3 {
     text-decoration: none;
 }
 
 .left-half a h4 {
     text-align: center;
-    margin-left: 0.8em;
-    padding-bottom: 2.5em;
+    margin-left: 6.1em;
+    margin-bottom: 15.5em;
+    width: 50%;
 }
 
 a {
