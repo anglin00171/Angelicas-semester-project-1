@@ -40,3 +40,22 @@ body .all-rights {
     font-size: 11px;
     padding: 0.1em 0.6em 0.2em 0;
 }
+
+/* Dinosaur at footer*/
+.dino {
+    width: 50px;
+    max-width: 100px;
+    min-width: 30px;
+    margin-top: 10.8vh;
+    position: fixed;
+    padding-left: 0.1em;
+    padding-bottom: 0.4em;
+    
+}
+
+@media (min-width: 319px) and (max-width: 1500px) {
+.dino {
+        bottom: 2px;
+        width: 60px;
+    }
+}

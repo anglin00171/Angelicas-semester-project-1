@@ -1,7 +1,7 @@
 
 :root {
     --text-shadow: 0px 0px 8px #f1f1f1;
-    --font-family-main: nunito, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    --font-family-main: nunito, poppins, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 body {
@@ -58,9 +58,10 @@ p a:hover {
 h4 {
     text-align: left;
     font-size: 19px;
-    width: 80%;
+    width: 100%;
     margin: 0;
-    padding-bottom: 0.5em;
+    padding-bottom: 0.1em;
+    padding-top: 0.4em;
 }
 
 p, h3, h4 {
@@ -146,6 +147,8 @@ p, h3, h4 {
     flex-wrap: wrap;
     height: auto;
 }
+
+/* Styles for all the pages on the left side*/
 
 .left-half {
     background-image: url(../images/dinosaur-skelett.png);
@@ -419,23 +422,5 @@ h2 a {
 @media (max-width: 600px) {
     .aside-kids .button-container a {
         font-size: 18px; 
-    }
-}
-/* Dinosaur at footer*/
-.dino {
-    width: 50px;
-    max-width: 100px;
-    min-width: 30px;
-    margin-top: 10.8vh;
-    position: fixed;
-    padding-left: 0.1em;
-    padding-bottom: 0.3em;
-    
-}
-
-@media (min-width: 319px) and (max-width: 1500px) {
-.dino {
-        bottom: 2px;
-        width: 60px;
     }
 }
