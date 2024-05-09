@@ -121,7 +121,7 @@ p, h3, h4 {
     .sticky-header h2 a {
         font-size: 58px;
     }
-    h4, h3 {
+    h3 {
         font-size: 22px;
     }
 }
@@ -198,16 +198,13 @@ nav ul li a {
     color: inherit;  
     font-weight: 500;
     font-size: 22px;
-    text-shadow: var(--text-shadow);
     letter-spacing: 1px;
-    transition: transform 0.5s ease;
     padding: 14px;
 }
 
 nav ul li a:hover {
     transform: translateX(6px);
     color: #95ff00;
-    background-color: #141414;
     border-radius: 5px;
 }
 

@@ -26,6 +26,9 @@ aside h2, h3, h4, h5 {
     margin: 0;
 }
 
+p {
+    width: 80%;
+}
 aside h2 {
     text-align: center;
 }
