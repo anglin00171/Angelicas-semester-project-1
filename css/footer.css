@@ -13,7 +13,7 @@ footer {
 footer a {
     text-shadow: 0px 0px 8px #141414;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 18px;
     padding: 0 1em;
     color: #f1f1f1;
     margin: 1em;
@@ -39,23 +39,4 @@ body .all-rights {
     text-align: right;
     font-size: 11px;
     padding: 0.1em 0.6em 0.2em 0;
-}
-
-/* Dinosaur at footer*/
-.dino {
-    width: 50px;
-    max-width: 100px;
-    min-width: 30px;
-    margin-top: 10.8vh;
-    position: fixed;
-    padding-left: 0.1em;
-    padding-bottom: 0.4em;
-    
-}
-
-@media (min-width: 319px) and (max-width: 1500px) {
-.dino {
-        bottom: 2px;
-        width: 60px;
-    }
 }

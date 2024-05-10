@@ -44,19 +44,7 @@ aside p {
     animation: bumpImage 0.8s ease;
   }
 
-
   /*CTA*/
-  aside {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    gap: 2em;
-    flex-wrap: wrap;
-    padding: 2em 1.5em;
-    margin: 1em;
-}
 
 .ex3-images .button-container1 img,
 .ex3-images .button-container2 img,
@@ -79,6 +67,7 @@ aside p {
     align-items: center;
     justify-content: center;
     width: 100%;
+    letter-spacing: 4px;
     max-width: 96%;
     padding: 15px;
     border-radius: 5px;

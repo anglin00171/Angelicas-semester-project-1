@@ -39,22 +39,23 @@ a {
     text-decoration: none;
 }
 
-.highlight1 {
-    color: #008000;
+.highlight1,
+.highlight2,
+.highlight3 {
     font-weight: 500;
     font-size: 28px;
+}
+
+.highlight1 {
+    color: #008000;
 }
 
 .highlight2 {
     color: #0000c4;
-    font-weight: 500;
-    font-size: 28px;
 }
 
 .highlight3 {
     color: #800080;
-    font-weight: 500;
-    font-size: 28px;
 }
 
 .dino-container {
