@@ -87,3 +87,9 @@ form #department {
 .biomed-container p {
     width: 80%
 }
+
+.thank-you {
+    font-size: 108px;
+    color: #008000;
+    font-weight: 700;
+}

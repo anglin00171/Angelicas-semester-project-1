@@ -354,7 +354,7 @@ h2 a {
     align-content: center;
     gap: 2em;
     flex-wrap: wrap;
-    padding: 2em 0;
+    padding: 1em 1em;
     margin: 1em;
 }
 
@@ -375,7 +375,6 @@ h2 a {
     align-items: center;
     justify-content: center;
     width: 100%;
-    /*max-width: 96%;*/
     padding: 15px;
     border-radius: 5px;
     background-color: #141414;
@@ -395,7 +394,7 @@ h2 a {
 
 /* Specific button styles */
 .aside-kids .holiday-club a {
-    background-color: #0000c4;  /* Orange for holiday club */
+    background-color: #0000c4;  /* Blue for holiday club */
 }
 
 .aside-kids .teachers a {

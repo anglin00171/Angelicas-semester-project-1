@@ -32,8 +32,7 @@
 
 .aside img {
     width: 100%; 
-    height: auto;
-    max-width: 300px;
+    max-height: 200px;
     margin-bottom: 10px;
 }
 
@@ -54,12 +53,12 @@
 
 .aside [class*="-box"] {
     border-radius: 5px;  
-    padding: 1.5em;   
+    padding: 2em 1em;  
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    background-color: #7dfffb;
+    background-color: #7dfffb44;
 }
 
 @media (max-width: 1024px) {
@@ -79,7 +78,7 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    max-width: 90%;
+    max-width: 80%;
     padding: 15px;
     border-radius: 5px;
     letter-spacing: 3px;
@@ -97,43 +96,13 @@
     color: #141414;
 }
 
-.aside .cosmos-box {
-    background-color: #7dfffb;
-    padding: 5.5em 1.2em 5.6em 1.4em; 
-}
-
-.aside .eco-box {
-    /*background-color: #7dff60; */
-    padding: 4.5em 1.2em 4.4em 1.4em;
-}
-
-.aside .robot-box {
-    /*background-color: #7dffde; */
-    padding: 4.5em 1.2em 4.2em 1.4em;
-}
-
-.aside .evolution-box {
-    /*background-color: #ffc472;*/
-    padding: 9em 1.2em 8.5em 1.4em;
-}
-
-.aside .heart-box {
-    /*background-color: #ff7c7c; */
-    padding: 9.8em 1.2em 8em 1.4em;
-}
-
-.aside .news-box {
-   /* background-color: #7dafff; */
-    padding: 2.5em 0 4.5em 0; 
-}
-
 .aside .news-box img {
     max-width: 260px;
 }
 
 /* news exhibitions */
 .aside .night-box {
-    background-color: #800080;
+    background-color: #80008082;
     padding: 2em 1em;
 }
 .aside .night-box img {
@@ -141,12 +110,12 @@
 }
 
 .aside .professor-box {
-    background-color: #008000;
+    background-color: #0080007e;
     padding: 2em 1em
 }
 
 .aside .energetica-box {
-    background-color: #0000c4;
+    background-color: #0000c47b;
     padding: 2em 1em;
 }
 
