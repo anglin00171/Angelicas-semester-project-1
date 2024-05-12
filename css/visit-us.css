@@ -44,15 +44,15 @@
 }
 
 .open-hours-container {
-    margin-left: 1.7em;
+    margin-left: 1em;
 }
 .open-hours-container2 {
     flex-direction: row-reverse;
-    margin-left: 1.4em;
+    margin-left: 0.5em;
 }
 
 .open-hours-container3 {
-    margin-left: 1.5em;
+    margin-left: 0em;
 }
 
 .text-content2,
@@ -69,11 +69,11 @@
     }
 }
 .text-content {
-    margin: 0em 1em 0 0.5em ;
+    margin: 0em 1em 0 0em ;
 }
 
 .text-content p {
-    padding-top: 0.6em;
+    padding-top: 0.1em;
 }
 
 .text-content, .text-content2, .text-content3, .image-content {
@@ -97,12 +97,12 @@
     max-width: 100%;
     height: auto;
     width: 300px;
-    margin: 4em 1em 0 0;
+    margin: 2em 1em 0 0;
 }
 
 .section {
-    padding: 0.5em 1.5em;
-    margin-left: 2em;
+    padding: 0.5em 1em;
+    margin-left: 1em;
     width: 70%;
 }
 
@@ -116,7 +116,7 @@
 }
 
 h3 {
-    margin-bottom: 4px;
+    margin-bottom: 1em;
 }
 
 .parking p {

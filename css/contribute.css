@@ -29,7 +29,7 @@ main {
 
 .container2 {
     flex-direction: row-reverse; 
-    margin-left: 1.9em;
+    margin-left: 0.5em;
 }
 
 .support-image img,
@@ -38,7 +38,7 @@ main {
     height: auto; 
     max-width: 100%;
     width: 300px;
-    padding-top: 1.6em;
+    padding-top: 1em;
 }
 
 @media (max-width: 750px) {
@@ -67,7 +67,6 @@ main {
 
 .text1,
 .text3 {
-    margin-left: 1.5em;
     padding: 0.5em;
 }
 
