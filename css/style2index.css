@@ -16,9 +16,8 @@
 }
 
 .highlight1,
-.highlight2,
 .highlight3 {
-    font-weight: 700;
+    font-weight: 1000;
     font-size: 28px;
 }
 
@@ -28,16 +27,11 @@
 
 .highlight2 {
     color: #0000c4;
+    font-weight: 900;
+    font-size: 24px;
 }
 
 .highlight3 {
     color: #800080;
-}
-
-.dino-container {
-    position: relative;
-    max-width: 100%;
-    width: 400px;
-    height: auto;
 }
 

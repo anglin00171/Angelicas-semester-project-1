@@ -18,7 +18,10 @@ img {
 
 h2 {
     display: flex;
-    justify-content: center;
+    justify-content: center; 
+}
+aside h4 {
+    width: 100%;
 }
 
 .about p {
@@ -43,7 +46,8 @@ h2 {
     width: 100%;
     max-width: 70%;
     padding: 15px;
-    letter-spacing: 3px;
+    font-weight: 900;
+    letter-spacing: 2px;
     margin-left: 0.4em;
     border-radius: 5px;
     background-color: #141414;  

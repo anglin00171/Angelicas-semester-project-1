@@ -67,7 +67,8 @@ aside p {
     align-items: center;
     justify-content: center;
     width: 100%;
-    letter-spacing: 4px;
+    letter-spacing: 2px;
+    font-weight: 900;
     max-width: 90%;
     padding: 15px;
     border-radius: 5px;
