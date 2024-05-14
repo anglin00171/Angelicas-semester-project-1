@@ -39,6 +39,7 @@ main {
     max-width: 100%;
     width: 300px;
     padding-top: 1em;
+    border-radius: 5px;
 }
 
 @media (max-width: 750px) {
